@@ -25,6 +25,10 @@ Pizza.prototype.calcPrice = function() {
   this.toppings.forEach(topping => {
   this.price += 1
   })
+  if (this.size === "small") {
+    this.price -= 1
+  } else if (this.size === "large")
+    this.price += 3
   }
 
 $(document).ready(function() {
