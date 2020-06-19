@@ -13,9 +13,9 @@ function Pizza(size, toppings, price) {
 //   }
 // }
 
-// Pizza.prototype.addSize = funtion() {
-//   this.size. = size;
-// }
+Pizza.prototype.addSize = function(size) {
+  this.size = size;
+}
 
 Pizza.prototype.addToppings = function(toppings) {
   this.toppings.push(toppings)
@@ -25,11 +25,10 @@ $(document).ready(function() {
   $("#pizza-order").submit(function() {
     event.preventDefault()
     let pizzaOrder = new Pizza()
-    console.log(pizzaOrder)
     $("#pizza-toppings input:checkbox:checked").each(function () {
       pizzaOrder.addToppings($(this).val());
     });
-    let size = $("#pizza-size").val();
-    console.log(size)
+    pizzaOrder.addSize($("#pizza-size input:radio[name=size]:checked").val());
+    console.log(pizzaOrder)
   });
 });
