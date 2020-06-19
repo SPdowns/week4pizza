@@ -14,12 +14,13 @@ Pizza.prototype.addToppings = function(toppings) {
 }
 
 $(document).ready(function() {
-  $("#begin-order").submit(function() {
+  $("#pizza-order").submit(function() {
     event.preventDefault()
     let pizzaOrder = new Pizza()
+    console.log(pizzaOrder)
     $("#pizza-toppings input:checkbox:checked").each(function () {
       pizzaOrder.addTopping($(this).val());
-      console.log(pizzaOrder.toppings)
     });
+    
   });
 });
