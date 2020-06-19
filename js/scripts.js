@@ -32,6 +32,18 @@ Pizza.prototype.calcPrice = function() {
   }
 
 $(document).ready(function() {
+  $("#start-order").click(function() {
+    $("#begin-order").addClass("hidden")
+    $("#pizza-size").removeClass("hidden");
+  });
+  $("#size-button").click(function() {
+    $("#pizza-size").addClass("hidden")
+    $("#pizza-toppings").removeClass("hidden");
+  });
+  $("#toppings-button").click(function() {
+    $("#pizza-toppings").addClass("hidden")
+    $("#pizza-submit").removeClass("hidden");
+  });
   $("#pizza-order").submit(function() {
     event.preventDefault()
     let pizzaOrder = new Pizza()
@@ -42,4 +54,5 @@ $(document).ready(function() {
     pizzaOrder.calcPrice(pizzaOrder)
     console.log(pizzaOrder)
   });
+
 });
