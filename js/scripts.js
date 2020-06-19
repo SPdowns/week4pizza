@@ -4,8 +4,8 @@
 
 function Pizza(size, toppings, price) {
   this.size = "";
-  this.toppings = []
-  this.price = ""
+  this.toppings = [];
+  this.price = 8
 }
 // Pizza.prototype.calcPrice = function(pizza) {
 //   if (pizza.crust === large) {
@@ -21,6 +21,11 @@ Pizza.prototype.addToppings = function(toppings) {
   this.toppings.push(toppings)
 }
 
+Pizza.prototype.calcPrice = function () {
+  this.toppings.forEach(this.toppings) {
+      this.price += 1
+  })
+
 $(document).ready(function() {
   $("#pizza-order").submit(function() {
     event.preventDefault()
@@ -29,6 +34,7 @@ $(document).ready(function() {
       pizzaOrder.addToppings($(this).val());
     });
     pizzaOrder.addSize($("#pizza-size input:radio[name=size]:checked").val());
+    pizzaOrder.calcPrice()
     console.log(pizzaOrder)
   });
 });
