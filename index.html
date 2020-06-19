@@ -15,11 +15,11 @@
           <h1>Pizza</h1>
         </div>
         <form id="pizza-order">
-          <div id="begin-order" class="">
+          <div id="begin-order" class="card">
             <p>You Want I should Start A Pizza</p>
             <button id="start-order">Click Here</button>
           </div>
-          <div id="pizza-size" class="hidden">
+          <div id="pizza-size" class="hidden card">
             <p>How Big You Want Your Pizza</p>
             <input type="radio" id="small" name="size" value="small">
             <label for="small">Small</label>
@@ -29,7 +29,7 @@
             <label for="large">Large</label>
             <button id="size-button" class="btn">Next</button>
           </div>
-          <div id="pizza-toppings" class="hidden">
+          <div id="pizza-toppings" class="hidden card">
             <input type="checkbox" id="cheese" name="toppings" value="cheese">
             <label for="cheese">Cheese</label>
             <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
@@ -42,13 +42,14 @@
             <label for="green-peppers">Green Peppers</label>
             <button id="toppings-button" class="btn">Next</button>
           </div>
-          <div id="pizza-submit" class="hidden">
+          <div id="pizza-submit" class="hidden card">
             <p>You want I should make this pizza</p>
             <button type="submit">Submit</button>
           </div>
         </form>
         <div id="pizza-final-cost" class="hidden">
           <p>Your pizza will cost <span id="cost"></span></p>
+          <button id="reload">Start Over</button>
         </div>
       </div>
     </body>

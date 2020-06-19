@@ -30,8 +30,6 @@ Pizza.prototype.calcPrice = function() {
 
 //UI Logic
 
-function classChange ()
-
 $(document).ready(function() {
   $("#start-order").click(function() {
     event.preventDefault()
@@ -61,5 +59,7 @@ $(document).ready(function() {
     $("#cost").text(pizzaOrder.price);
     console.log(pizzaOrder.price);
   });
-
+  $("#reload").click(function() {
+    location.reload();
+  });
 });
