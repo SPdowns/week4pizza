@@ -1,15 +1,13 @@
-// funtion Order() {
-//   this.pizza
-// }
+function Order() {
+  this.pizza
+}
 
-// funtion Pizza() {
-//   this.size
-//   this.toppings
-// }
+function Pizza() {
+  this.size
+  this.toppings
+}
 
-// Pizza.prototype.toppings() {
-
-// }
+Pizza.prototype.toppings() 
 
 $(document).ready(function() {
   $("#begin-order").click(function() {
