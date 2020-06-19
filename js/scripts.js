@@ -1,3 +1,5 @@
+//Business Logic
+
 // function Order(pizza, total) {
 
 // }
@@ -7,11 +9,6 @@ function Pizza(size, toppings, price) {
   this.toppings = [];
   this.price = 8
 }
-// Pizza.prototype.calcPrice = function(pizza) {
-//   if (pizza.crust === large) {
-//     pizza.price += 2
-//   }
-// }
 
 Pizza.prototype.addSize = function(size) {
   this.size = size;
@@ -30,6 +27,10 @@ Pizza.prototype.calcPrice = function() {
   } else if (this.size === "large")
     this.price += 3
   }
+
+//UI Logic
+
+function classChange ()
 
 $(document).ready(function() {
   $("#start-order").click(function() {
