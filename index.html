@@ -31,9 +31,9 @@
           </div>
           <div id="pizza-toppings" class="hidden card">
             <div class="call">
-            <input type="checkbox" id="cheese" name="toppings" value="cheese">
-            <label for="cheese">Cheese</label>
-          </div>
+              <input type="checkbox" id="cheese" name="toppings" value="cheese"><br>
+              <label for="cheese">Cheese</label>
+            </div>
             <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
             <label for="pepperoni">Pepperoni</label>
 
@@ -48,14 +48,14 @@
 
             <button id="toppings-button" class="btn btn-success">Next</button>
           </div>
-          <div id="pizza-submit" class="hidden card">
-            <p>You want I should make this pizza</p>
-            <button class="btn btn-success" type="submit">Submit</button>
+          <div id="pizza-submit" class="hidden card lastcard">
+            <p>You want I should make this pizza or start over?</p>
+            <button class="btn btn-success" type="submit">Submit</button><br>
+            <button class="btn btn-success" id="reload">Start Over</button>
           </div>
         </form>
-        <div id="pizza-final-cost" class="hidden">
+        <div id="pizza-final-cost" class="hidden card">
           <p>Your pizza will cost <span id="cost"></span></p>
-          <button id="reload">Start Over</button>
         </div>
       </div>
     </body>
