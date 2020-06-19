@@ -1,36 +1,25 @@
-function Order(pizza, total) {
+// function Order(pizza, total) {
 
-}
-
-
+// }
 
 function Pizza(size, toppings) {
-  this.pizza = pizza;
-  this.total = total
-  this.size = size;
-  this.toppings = [toppings]
-}
+  this.size = "";
+  this.toppings = []
 
+}
 
 
 Pizza.prototype.addToppings = function(toppings) {
   this.toppings.push(toppings)
 }
 
-
 $(document).ready(function() {
-  
   $("#begin-order").submit(function() {
+    event.preventDefault()
     let pizzaOrder = new Pizza()
-    // $("#begin-order").addClass("hidden")
-    // $("#pizza-size").removeClass("hidden"); //Find way to call an outside function to add remove when click
+    $("#pizza-toppings input:checkbox:checked").each(function () {
+      pizzaOrder.addTopping($(this).val());
+      console.log(pizzaOrder.toppings)
+    });
   });
-
-  // $("#size-button").click(function() {
-    
-  //   $("#pizza-size").addClass("hidden")
-  //   $("#pizza-toppings").removeClass("hidden"); //find way to call an outside function to add remove when click
-  // });
-
-
 });
