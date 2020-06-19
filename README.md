@@ -1,10 +1,10 @@
-# Pig Dice
+# Order a Pizza
 
-#### Project for Epicodus, 2020.06.17-18
+#### Order a Pizza, 2020.06.19
 
-#### _By Kate Skorija & Sean Downs_
+#### _By Sean Downs_
 ## Description
-This is an exercise for [Epicodus](https://www.epicodus.com/) to practice object oriented programming in JavaScript. 
+This website will take an order for a pizza
 
 ## Specifications
 **Behavior 1**: To create a new object pizza on button click
@@ -12,21 +12,17 @@ This is an exercise for [Epicodus](https://www.epicodus.com/) to practice object
   * Output: A New Pizza object is created
 
 **Behavior 2**: The ability to collect pizza toppings from the user and put them into an array
-  * Input: The user will check what
-  * Output: 
+  * Input: The user will check what toppings they want (pepperoni)
+  * Output: The toppings array inside the pizza object will populate with values this.toppings = [pepperoni]
 
-**Behavior 3**: 
-  * Input: 
-  * Output: 
+**Behavior 3**: The pizza price is set at 8 and will then add a calculated by size and toppings
+  * Input: The user will check Medium, with Cheese and Peperoni
+  * Output: The user will see there pizza costs 10
 
-**Behavior 4**: 
-  * Input: 
-  * Output: 
+**Behavior 4**: The user will be able to start over
+  * Input: the user clicks Start Over
+  * Output: All data is cleared and the user can start order a new pizza
 
-**Scoring**
-* 
-* 
-* 
 
 ## Known Bugs
 * No known bugs.   
@@ -44,4 +40,4 @@ This is an exercise for [Epicodus](https://www.epicodus.com/) to practice object
 * jQuery-3.5.1
 
 ## License
-This software is licensed under the MIT license. Copyright (c) 2020 **_Kate Skorija_** & **_Sean Downs_**
+This software is licensed under the MIT license. Copyright (c) 2020 **_Sean Downs_**

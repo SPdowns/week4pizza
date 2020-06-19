@@ -1,3 +1,24 @@
 .hidden {
   display: none;
 }
+
+body {
+  background-image: url(../img/wallpaper-1.jpg);
+  display: ;
+  align-items: ;
+}
+
+.card {
+  background-color: rgb(180, 136, 81);
+  max-width: 480px;
+  text-align: center;
+  align-items: center;
+}
+
+.btn {
+
+}
+
+.call {
+  
+}

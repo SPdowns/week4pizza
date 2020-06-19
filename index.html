@@ -17,7 +17,7 @@
         <form id="pizza-order">
           <div id="begin-order" class="card">
             <p>You Want I should Start A Pizza</p>
-            <button id="start-order">Click Here</button>
+            <button id="start-order" class="btn btn-success">Click Here</button>
           </div>
           <div id="pizza-size" class="hidden card">
             <p>How Big You Want Your Pizza</p>
@@ -27,24 +27,30 @@
             <label for="medium">Medium</label>
             <input type="radio" id="large" name="size" value="large">
             <label for="large">Large</label>
-            <button id="size-button" class="btn">Next</button>
+            <button id="size-button" class="btn btn-success">Next</button>
           </div>
           <div id="pizza-toppings" class="hidden card">
-            <input type="checkbox" id="cheese" name="toppings" value="cheese" checked>
+            <div class="call">
+            <input type="checkbox" id="cheese" name="toppings" value="cheese">
             <label for="cheese">Cheese</label>
+          </div>
             <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
             <label for="pepperoni">Pepperoni</label>
+
             <input type="checkbox" id="olives" name="toppings" value="olives">
             <label for="olives">Olives</label>
+
             <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
             <label for="mushrooms">Mushrooms</label>
+
             <input type="checkbox" id="green-peppers" name="toppings" value="green-peppers">
             <label for="green-peppers">Green Peppers</label>
-            <button id="toppings-button" class="btn">Next</button>
+
+            <button id="toppings-button" class="btn btn-success">Next</button>
           </div>
           <div id="pizza-submit" class="hidden card">
             <p>You want I should make this pizza</p>
-            <button type="submit">Submit</button>
+            <button class="btn btn-success" type="submit">Submit</button>
           </div>
         </form>
         <div id="pizza-final-cost" class="hidden">
