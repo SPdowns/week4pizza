@@ -31,6 +31,7 @@ Pizza.prototype.calcPrice = function() {
 //UI Logic
 
 $(document).ready(function() {
+
   $("#start-order").click(function() {
     event.preventDefault()
     $("#begin-order").addClass("hidden")
