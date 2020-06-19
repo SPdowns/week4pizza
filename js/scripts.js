@@ -21,10 +21,11 @@ Pizza.prototype.addToppings = function(toppings) {
   this.toppings.push(toppings)
 }
 
-Pizza.prototype.calcPrice = function () {
-  this.toppings.forEach(this.toppings) {
-      this.price += 1
-  })
+Pizza.prototype.calcPrice = function() {
+  this.toppings.forEach(function() {
+    this.price += 1
+    })
+  }
 
 $(document).ready(function() {
   $("#pizza-order").submit(function() {
@@ -34,7 +35,7 @@ $(document).ready(function() {
       pizzaOrder.addToppings($(this).val());
     });
     pizzaOrder.addSize($("#pizza-size input:radio[name=size]:checked").val());
-    pizzaOrder.calcPrice()
+    pizzaOrder.calcPrice(pizzaOrder)
     console.log(pizzaOrder)
   });
 });
