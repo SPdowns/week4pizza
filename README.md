@@ -28,8 +28,17 @@ This website will take an order for a pizza
 * No known bugs.   
 
 ## Setup/Installation Requirements
-* Clone this repository from GitHub.
-* Open the index.html file with your preffered browser to view the website, or use a code editor to view the code.
+To view live website, open your browser in chrome or firefox, DO NOT USE IE. In the addressbar - visit https://spdowns.github.io/week4pizza/
+
+Open by downloading:
+
+Download this repository onto your computer by clicking the 'clone or download button'
+Double click index.html to open it in your web browser
+Open via Bash/GitBash:
+
+Clone this repository onto your computer: https://github.com/SPdowns/week4pizza
+Navigate into the week4pizza directory in Visual Studio Code or preferred text editor code .
+Open index.html in Chrome or preferred browser: open index.html
 
 ## Technologies Used
 * Visual Studio Code (code editor)

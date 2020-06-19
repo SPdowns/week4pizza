@@ -58,7 +58,6 @@ $(document).ready(function() {
     $("#pizza-submit").addClass("hidden");
     $("#pizza-final-cost").removeClass("hidden");
     $("#cost").text(pizzaOrder.price);
-    console.log(pizzaOrder.price);
   });
   $(".reload").click(function() {
     location.reload();
