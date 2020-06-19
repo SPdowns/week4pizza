@@ -22,8 +22,7 @@ Pizza.prototype.addToppings = function(toppings) {
 }
 
 Pizza.prototype.calcPrice = function() {
-  this.toppings.forEach(function(topping) {
-  console.log(this.price, this.toppings)
+  this.toppings.forEach(topping => {
   this.price += 1
   })
   }
