@@ -7,12 +7,12 @@
 This is an exercise for [Epicodus](https://www.epicodus.com/) to practice object oriented programming in JavaScript. 
 
 ## Specifications
-**Behavior 1**: 
-  * Input: 
-  * Output: 
+**Behavior 1**: To create a new object pizza on button click
+  * Input: User clicks the "click here" on the first div
+  * Output: A New Pizza object is created
 
-**Behavior 2**: 
-  * Input: 
+**Behavior 2**: The ability to collect pizza toppings from the user and put them into an array
+  * Input: The user will check what
   * Output: 
 
 **Behavior 3**: 
