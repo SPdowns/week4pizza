@@ -22,16 +22,17 @@ Pizza.prototype.addToppings = function(toppings) {
 }
 
 Pizza.prototype.calcPrice = function() {
-  this.toppings.forEach(function() {
-    this.price += 1
-    })
+  this.toppings.forEach(function(topping) {
+  console.log(this.price, this.toppings)
+  this.price += 1
+  })
   }
 
 $(document).ready(function() {
   $("#pizza-order").submit(function() {
     event.preventDefault()
     let pizzaOrder = new Pizza()
-    $("#pizza-toppings input:checkbox:checked").each(function () {
+    $("#pizza-toppings input:checkbox:checked").each(function() {
       pizzaOrder.addToppings($(this).val());
     });
     pizzaOrder.addSize($("#pizza-size input:radio[name=size]:checked").val());
