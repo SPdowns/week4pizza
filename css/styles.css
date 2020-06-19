@@ -9,8 +9,6 @@ body {
   text-align: center;
 }
 
-.container {
-}
 
 .card {
   width: 390px;
@@ -24,8 +22,4 @@ body {
   background-color: rgb(180, 136, 81);
   max-width: 480px;
   align-items: center;
-}
-
-.btn {
-
 }

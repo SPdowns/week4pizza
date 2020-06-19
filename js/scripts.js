@@ -60,7 +60,7 @@ $(document).ready(function() {
     $("#cost").text(pizzaOrder.price);
     console.log(pizzaOrder.price);
   });
-  $("#reload").click(function() {
+  $(".reload").click(function() {
     location.reload();
   });
 });
