@@ -24,3 +24,7 @@ body {
   max-width: 480px;
   align-items: center;
 }
+
+.jumbotron {
+  max-height: 200px;
+}
