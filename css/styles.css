@@ -4,6 +4,9 @@
 
 body {
   background-image: url(../img/wallpaper-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: flex;
   align-items: stretch;
   text-align: center;
@@ -27,4 +30,5 @@ body {
 
 .jumbotron {
   max-height: 200px;
+  background: none;  
 }
