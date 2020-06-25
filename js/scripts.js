@@ -4,7 +4,7 @@
 
 // }
 
-function Pizza(size, toppings, price) {
+function Pizza() {
   this.size = "";
   this.toppings = [];
   this.price = 8
